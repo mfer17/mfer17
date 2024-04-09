@@ -1,4 +1,4 @@
 <h1>Hi there 👋</h1>
 <p>My name is <strong>Maria Fernanda Mónoga Mejia</strong> but you can call me <strong>Mafe</strong>. I am a dynamic and resourceful software developer with a passion for problem-solving. My dedication to tackling technical challenges is only matched by my love for sports and music, which I seamlessly integrates into my life outside of work. Currently thriving at Pantou Intelligence Business SAS, I bring creativity and enthusiasm to every project I undertakes. I'm currently learning AI and Videogames.</p>
 <p>How to reach me: </p>
-<p><a href="https://www.linkedin.com/in/maria-fernanda-m%C3%B3noga-mejia-051669104/"><img src="./5279114_linkedin_network_social network_linkedin logo_icon.png" alt="linkedin" width="32px"/></a> <a href="https://twitter.com/mafemome">Twitter</a></p>
+<p><a href="https://www.linkedin.com/in/maria-fernanda-m%C3%B3noga-mejia-051669104/" target="_blank"><img src="./5279114_linkedin_network_social network_linkedin logo_icon.png" alt="linkedin" width="32px"/></a> <a href="https://twitter.com/mafemome" target="_blank"><img/ src="./11244080_x_twitter_elon musk_twitter new logo_icon.png" alt="Twitter"></a></p>
