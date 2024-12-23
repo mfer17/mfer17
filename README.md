@@ -1,3 +1,4 @@
+<div style="background: black;">
 <nav>
   <ul>
     <li>About me</li>
@@ -42,3 +43,4 @@
     <img src="./11244080_x_twitter_elon musk_twitter new logo_icon(1).png" alt="Twitter" width="24px"/>
   </a>
 </p>
+</div>
