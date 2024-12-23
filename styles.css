@@ -1,0 +1,42 @@
+/* Restablecer márgenes y rellenos de todos los elementos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer fuentes predeterminadas */
+body {
+    font-family: sans-serif; /* o cualquier fuente que prefieras */
+}
+
+/* Eliminar los estilos de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Establecer tamaño base para la tipografía */
+html {
+    font-size: 100%; /* Esto hace que el tamaño base sea relativo a la configuración del navegador */
+}
+
+/* Hacer que las listas no tengan estilo */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Hacer que las tablas no tengan bordes */
+table {
+    border-collapse: collapse;
+}
+
+/* Eliminar el borde y el fondo de los botones */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
