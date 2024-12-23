@@ -39,6 +39,6 @@
     <img src="./5296501_linkedin_network_linkedin logo_icon.png" alt="linkedin" width="24px"/>
   </a> 
   <a href="https://twitter.com/mafemome" target="_blank">
-    <img/ src="./11244080_x_twitter_elon musk_twitter new logo_icon(1).png" alt="Twitter" width="24px">
+    <img src="./11244080_x_twitter_elon musk_twitter new logo_icon(1).png" alt="Twitter" width="24px"/>
   </a>
 </p>
