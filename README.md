@@ -1,12 +1,4 @@
 <div style="background: black;">
-  <style>
-    body{
-      background: black !important;
-    }
-    .markdown-body{
-      background: black !important;
-    }
-  </style>
 <nav>
   <ul>
     <li>About me</li>
