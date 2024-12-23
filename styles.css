@@ -10,6 +10,8 @@
 /* Establecer fuentes predeterminadas */
 body {
     font-family: sans-serif; /* o cualquier fuente que prefieras */
+    background: black;
+    color: white;
 }
 
 /* Eliminar los estilos de los enlaces */
