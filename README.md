@@ -1,3 +1,14 @@
+<nav>
+  <ul>
+    <li>About me</li>
+    <li></li>
+    <li>About me</li>
+    <li>About me</li>
+    <li>About me</li>
+    <li>About me</li>
+  </ul>
+</nav>
+
 <h1>Hi there 👋</h1>
 <p>My name is <strong>Maria Fernanda Mónoga Mejia</strong> but you can call me <strong>Mafe</strong>. I am a dynamic and resourceful software developer with a passion for problem-solving. My dedication to tackling technical challenges is only matched by my love for sports and music, which I seamlessly integrates into my life outside of work. Currently thriving at Pantou Intelligence Business SAS, I bring creativity and enthusiasm to every project I undertakes. I'm currently learning AI and Videogames.</p>
 <h2>What is my skills?</h2>
