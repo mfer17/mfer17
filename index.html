@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="height-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tu Título de Página</title>
+    <title>Maria Fernanda Mónoga Mejía</title>
     <!-- Vincular archivo CSS externo -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="display-flex justify-content-center align-items-center height-100 img-body" style="background-image: url(./images/background-1060405_1920.png);">
     <!-- Header: Encabezado del sitio -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="width-70 background-color-white border-radius-15 padding-all shadow-content">
+        <header class="width-full padding-top-20 padding-bottom-20">
+            <nav class="width-full display-flex justify-content-space-between">
+                <ul class="width-40 display-flex justify-content-space-around">
+                    <li><a href="#About" class="text-transform-uppercase font-weight-700 color-black">About</a></li>
+                    <li><a href="#Projects" class="text-transform-uppercase font-weight-700 color-black">Projects</a></li>
+                </ul>
+                <ul class="width-40 display-flex justify-content-space-around">
+                    <li><a href="#Portfolio" class="text-transform-uppercase font-weight-700 color-black">Portfolio</a></li>
+                    <li><a href="#Contact" class="text-transform-uppercase font-weight-700 color-black">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Sección principal del contenido -->
-    <main>
-        <section id="bienvenida">
-            <h1>Bienvenido a mi portafolio</h1>
-            <p>Descripción breve de lo que haces.</p>
-        </section>
+        <!-- Sección principal del contenido -->
+        <main>
+            <section id="About" class="margin-top-20 width-full display-flex justify-content-space-around">
+                <div class="width-30 padding-right">
+                    <h1 class="color-black margin-bottom-20 font-size-2-5-rem">Hi, I'm Mafe <br/>Web Developer</h1>
+                    <p class="color-black font-size-1-rem">Full-stack developer with experience in system integration, process automation, and working with platforms like Shopify, WordPress, and PrestaShop. Specialized in custom checkout solutions, software architecture, and workflow optimization. Proficient in programming languages such as JavaScript, Java, PHP, and Python. Passionate about technological innovation and creating efficient solutions.</p>
+                </div>
+                <div class="width-40">
+                    <div class="img-me-portfolio" style="background-image: url('./images/IMG_20241221_183801.jpg');"></div>
+                </div>
+                <div class="width-30">
+                    <p class="color-black font-size-2-5-rem"><strong>Hi</strong>, I'm <br/> I'm <br/> Web Developer <br/> Hire me</p>
+                </div>
+            </section>
 
-        <section id="proyectos">
-            <h2>Mis Proyectos</h2>
-            <p>Aquí se muestran los proyectos que he realizado.</p>
-        </section>
-    </main>
+            <section id="Projects">
+                <h2>Mis Proyectos</h2>
+                <p>Aquí se muestran los proyectos que he realizado.</p>
+            </section>
+        </main>
 
-    <!-- Footer: Pie de página -->
-    <footer>
-        <p>&copy; 2024 Tu Nombre - Todos los derechos reservados.</p>
-    </footer>
+        <!-- Footer: Pie de página -->
+        <footer>
+            <p>&copy; 2024 Tu Nombre - Todos los derechos reservados.</p>
+        </footer>
 
-    <!-- Vincular archivo JavaScript externo (si lo tienes) -->
-    <script src="script.js"></script>
+        <!-- Vincular archivo JavaScript externo (si lo tienes) -->
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

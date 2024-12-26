@@ -1,0 +1,164 @@
+/* Restablecer márgenes y rellenos de todos los elementos */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer fuentes predeterminadas */
+body {
+    font-family: "Comfortaa", serif; /* o cualquier fuente que prefieras */
+    background: #a2a5a0;
+    color: white;
+}
+
+/* Eliminar los estilos de los enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Establecer tamaño base para la tipografía */
+html {
+    font-size: 100%; /* Esto hace que el tamaño base sea relativo a la configuración del navegador */
+}
+
+/* Hacer que las listas no tengan estilo */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Hacer que las tablas no tengan bordes */
+table {
+    border-collapse: collapse;
+}
+
+/* Eliminar el borde y el fondo de los botones */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.width-full{
+    width: 100%;
+}
+
+.width-70{
+    width: 70%;
+}
+
+.width-60{
+    width: 60%;
+}
+
+.width-40{
+    width: 40%;
+}
+
+.width-30{
+    width: 30%;
+}
+
+.height-100{
+    height: 100%;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.justify-content-space-around{
+    justify-content: space-around;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.padding-all{
+    padding: 30px;;
+}
+
+.border-radius-15{
+    border-radius: 15px;
+}
+
+.text-transform-uppercase{
+    text-transform: uppercase;
+}
+
+.font-weight-700{
+    font-weight: 700;
+}
+
+.background-color-white{
+    background-color: white;
+}
+
+.color-black{
+    color: black;
+}
+
+.padding-top-20{
+    padding-top: 20px;
+}
+
+.padding-bottom-20{
+    padding-bottom: 20px;
+}
+
+.padding-right{
+    padding-right: 20px;
+}
+
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.font-size-2-5-rem{
+    font-size: 2.5rem;
+}
+
+.font-size-1-rem{
+    font-size: 1rem;
+}
+
+.img-body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-me-portfolio{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.shadow-content{
+    -webkit-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.75);
+}
+
+
+
+
