@@ -169,6 +169,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    width: 100%;
     height: 500px;
     border-radius: 50%;
 }
@@ -190,6 +191,54 @@ button {
 .border-bottom-1{
     border-bottom: 1px solid gray;
 }
+
+@media (max-width: 1024px) {
+    .padding-left{
+        padding-left: 0;
+    }
+
+    .padding-right{
+        padding-right: 0;
+    }
+
+    .width-full-section-mobile{
+        width: 100%;
+    }
+
+    .img-me-portfolio{
+        width: 350px;
+        height: 350px;
+    }
+
+    .width-full-mobile{
+        width: 95%;
+    }
+
+    .margin-bottom-20-mobile{
+        margin-bottom: 20px;
+    }
+
+    .align-items-start-mobile{
+        align-items: flex-start;
+    }
+
+    .align-items-center-mobile{
+        align-items: center;
+    }
+
+    .flex-direction-column-mobile{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-me-portfolio{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
 
 
 
