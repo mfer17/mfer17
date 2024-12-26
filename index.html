@@ -15,7 +15,7 @@
     <!-- Header: Encabezado del sitio -->
     <div class="width-70 background-color-white border-radius-15 padding-all shadow-content align-items-start-mobile width-full-mobile">
         <header class="width-full padding-top-20 padding-bottom-20">
-            <nav class="width-full display-flex justify-content-space-between">
+            <nav class="menu-desk width-full display-flex justify-content-space-between">
                 <ul class="width-40 display-flex justify-content-space-around">
                     <li><a href="#About" class="text-transform-uppercase font-weight-700 color-black">About</a></li>
                     <li><a href="#Projects" class="text-transform-uppercase font-weight-700 color-black">Projects</a></li>
@@ -24,6 +24,20 @@
                     <li><a href="#Portfolio" class="text-transform-uppercase font-weight-700 color-black">Portfolio</a></li>
                     <li><a href="#Contact" class="text-transform-uppercase font-weight-700 color-black">Contact</a></li>
                 </ul>
+            </nav>
+            <nav class="menu-mobile">
+                <menu-hamburger-open id="menu-hamburger-open" class="menu-hamburger-open">
+                    <img src="./images/hamburger_menu_navigation_navbar_icon.png" alt="Mostrar el menu en versión mobile" width="35px"/>
+                </menu-hamburger-open>
+                <menu-hamburger-close id="menu-hamburger-close" class="menu-hamburger-close hidden-icon-menu-mobile">
+                    <img src="./images/close.png" alt="Ocultar el menu en versión mobile" width="35px"/>
+                </menu-hamburger-close>
+                <menu-options-hamburger id="option-menu-hamburger" class="width-full hidden-options-menu">
+                    <li class="margin-bottom-20"><a href="#About" class="text-transform-uppercase font-weight-700 color-black">About</a></li>
+                    <li class="margin-bottom-20"><a href="#Projects" class="text-transform-uppercase font-weight-700 color-black">Projects</a></li>
+                    <li class="margin-bottom-20"><a href="#Portfolio" class="text-transform-uppercase font-weight-700 color-black">Portfolio</a></li>
+                    <li class="margin-bottom-20"><a href="#Contact" class="text-transform-uppercase font-weight-700 color-black">Contact</a></li>
+                </menu-options-hamburger>
             </nav>
         </header>
 
@@ -77,7 +91,7 @@
         </footer>
 
         <!-- Vincular archivo JavaScript externo (si lo tienes) -->
-        <script src="script.js"></script>
+        <script src="./scripts/script.js"></script>
     </div>
 </body>
 </html>

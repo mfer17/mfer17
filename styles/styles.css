@@ -192,7 +192,40 @@ button {
     border-bottom: 1px solid gray;
 }
 
+.menu-mobile{
+    display: none;
+}
+
+.hidden-options-menu{
+    display: none;
+}
+
+.show-options-menu-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.hidden-icon-menu-mobile{
+    display: none;
+}
+
+.show-icon-menu-mobile{
+    display: block;
+}
+
 @media (max-width: 1024px) {
+    .menu-desk{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block !important;
+    }
+
     .padding-left{
         padding-left: 0;
     }
