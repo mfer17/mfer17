@@ -79,6 +79,10 @@ button {
     display: block;
 }
 
+.flex-direction-column{
+    flex-direction: column;
+}
+
 .justify-content-center{
     justify-content: center;
 }
@@ -217,7 +221,23 @@ button {
     display: block;
 }
 
+.text-align-center{
+    text-align: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-basis{
+    flex-basis: 32%;
+}
+
 @media (max-width: 1024px) {
+    .img-body{
+        background-repeat: repeat;
+    }
+
     .menu-desk{
         display: none;
     }
