@@ -79,6 +79,10 @@ button {
     height: 300px;
 }
 
+.height-550-px{
+    height: 550px;
+}
+
 .display-flex{
     display: flex;
 }
@@ -247,6 +251,10 @@ button {
 
 .flex-basis{
     flex-basis: 32%;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
