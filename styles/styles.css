@@ -258,6 +258,10 @@ button {
 }
 
 @media (max-width: 1024px) {
+    .font-size-2-5-rem{
+        font-size: 1.8rem;
+    }
+
     .img-body{
         background-repeat: repeat;
     }
