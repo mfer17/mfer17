@@ -12,6 +12,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Special+Gothic+Expanded+One&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
     <link rel="icon" href="images/2560340_m_media_network_social_icon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body class="display-flex justify-content-center align-items-start-mobile background-color-main">
 
@@ -53,10 +57,10 @@
 
         <!-- Sección principal del contenido -->
         <main>
-            <section id="About" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-reverse-mobile ">
+            <section id="About" class="margin-bottom-40 margin-bottom-20-mobile margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-reverse-mobile ">
                 <div class="width-60 padding-right width-full-section-mobile margin-bottom-20-mobile padding-all">
-                    <h1 class="color-black margin-bottom-20 font-size-title">> Hi, I'm Mafe </h1>
-                    <p class="color-black font-size-1-rem line-height-28-px">Full-stack developer with experience in system integration, process automation, and working with platforms like Shopify, WordPress, and PrestaShop. Specialized in custom checkout solutions, software architecture, and workflow optimization. Proficient in programming languages such as JavaScript, Java, PHP, and Python. Passionate about technological innovation and creating efficient solutions.</p>
+                    <h1 class="color-black margin-bottom-20 font-size-title font-weight-500">> Hi, I'm Mafe </h1>
+                    <p class="color-black font-size-text line-height-28-px">Full-stack developer with experience in system integration, process automation, and working with platforms like Shopify, WordPress, and PrestaShop. Specialized in custom checkout solutions, software architecture, and workflow optimization. Proficient in programming languages such as JavaScript, Java, PHP, and Python. Passionate about technological innovation and creating efficient solutions.</p>
                 </div>
                 <div class="width-40 width-full-section-mobile margin-bottom-20-mobile display-flex justify-content-center align-items-center-mobile">
                     <div class="img-me-portfolio" style="background-image: url('./images/portafolio.jpg');"></div>
@@ -89,135 +93,173 @@
                 </div>-->
             </section>
 
-            <section id="Projects" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile">
+            <section id="Projects" class="margin-bottom-40 margin-bottom-20-mobile margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile">
                 <div class="width-full display-flex align-items-center flex-direction-column">
-                    <h2 class="color-black margin-bottom-20 font-size-2-5-rem">My Projects</h2>
-                    <p class="color-black font-size-1-rem text-align-center">Throughout my career as a developer, I have worked on various projects that stand out for their focus on technological innovation, process optimization, and the integration of customized solutions. Some of these projects include:</p>
-                    <div class="width-full margin-top-20 display-flex flex-wrap justify-content-space-around">
-                        <a class="display-flex flex-direction-column justify-content-space-between width-30 width-full-mobile margin-bottom-20 height-500-px" href="https://mfer17.github.io/html_css/" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Trekking</h4>
-                            <img class="margin-bottom-20 height-250-px" src="./images/ProyectoHiking.jpg" alt="Proyecto Trekking"/>
-                            <p class="color-black font-size-1-rem">A website developed from scratch using HTML, CSS, and JavaScript, designed to provide useful information and interactive resources for trekking enthusiasts...</p>
-                            <p class="color-blue font-weight-700">April - Currently</p>
-                        </a>
-                        <a class="display-flex flex-direction-column justify-content-space-between  width-30 width-full-mobile margin-bottom-20 height-500-px" href="https://mfer17.github.io/Local-Skills-Exchange/" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Local Skills Exchange</h4>
-                            <img class="margin-bottom-20 height-250-px" src="./images/mockup-local-skills-exchange.webp" alt="Proyecto Local Skills Exchange"/>
-                            <p class="color-black font-size-1-rem">A website built from scratch using React and Express.js. The platform is designed to enable people to exchange skills without involving money. For example, a designer can create mockups for a programmer in exchange for development-related services...</p>
-                            <p class="color-blue font-weight-700">December - Currently</p>
-                        </a>
-                        <a class="display-flex flex-direction-column justify-content-space-between width-30 width-full-mobile margin-bottom-20 height-500-px" href="https://mfer17.github.io/Virtual-Assistant-for-Small-Decisions/" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Virtual Assistant for Small Decisions</h4>
-                            <img class="margin-bottom-20 height-250-px" src="./images/Virtual Assistant designed for small decisions.webp" alt="Proyecto Virtual Assistant for Small Decisions"/>
-                            <p class="color-black font-size-1-rem">A website built from scratch using Angular and Python with Django. An AI-based assistant that helps with small but frequent decisions, such as 'What should I have for dinner tonight?' or 'What series should I watch?</p>
-                            <p class="color-blue font-weight-700">December - Currently</p>
-                        </a>
+                    <h2 class="color-black margin-bottom-20 font-size-title font-weight-500">My Projects</h2>
+                    <p class="margin-bottom-40 margin-bottom-20 color-black font-size-text text-align-center line-height-28-px">Throughout my career as a developer, I have worked on various projects that stand out for their focus on technological innovation, process optimization, and the integration of customized solutions. Some of these projects include:</p>
+                    <div class="swiper slider-swiper-product width-full margin-top-20 display-flex flex-wrap justify-content-space-around">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide display-flex flex-direction-column justify-content-space-between width-30 width-full-mobile margin-bottom-20 height-300-px" href="https://mfer17.github.io/html_css/" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Trekking</h4>
+                                <!--<img class="margin-bottom-20 height-250-px" src="./images/ProyectoHiking.jpg" alt="Proyecto Trekking"/>-->
+                                <p class="color-black font-size-text line-height-28-px text-align-justify">A website developed from scratch using HTML, CSS, and JavaScript, designed to provide useful information and interactive resources for trekking enthusiasts...</p>
+                                <p class="color-blue font-weight-700">April - Currently</p>
+                            </a>
+                            <a class="swiper-slide display-flex flex-direction-column justify-content-space-between  width-30 width-full-mobile margin-bottom-20 height-300-px" href="https://mfer17.github.io/Local-Skills-Exchange/" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Local Skills Exchange</h4>
+                                <!--<img class="margin-bottom-20 height-250-px" src="./images/mockup-local-skills-exchange.webp" alt="Proyecto Local Skills Exchange"/>-->
+                                <p class="color-black font-size-text line-height-28-px text-align-justify">A website built from scratch using React and Express.js. The platform is designed to enable people to exchange skills without involving money. For example, a designer can create mockups for a programmer in exchange for development-related services...</p>
+                                <p class="color-blue font-weight-700">December - Currently</p>
+                            </a>
+                            <a class="swiper-slide display-flex flex-direction-column justify-content-space-between width-30 width-full-mobile margin-bottom-20 height-300-px" href="https://mfer17.github.io/Virtual-Assistant-for-Small-Decisions/" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Virtual Assistant for Small Decisions</h4>
+                                <!--<img class="margin-bottom-20 height-250-px" src="./images/Virtual Assistant designed for small decisions.webp" alt="Proyecto Virtual Assistant for Small Decisions"/>-->
+                                <p class="color-black font-size-text line-height-28-px text-align-justify">A website built from scratch using Angular and Python with Django. An AI-based assistant that helps with small but frequent decisions, such as 'What should I have for dinner tonight?' or 'What series should I watch?</p>
+                                <p class="color-blue font-weight-700">December - Currently</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="width-full display-flex align-items-center margin-top-40"> 
+                        <div class="progress-bar">
+                            <div id="progress-bar-fill-slider-product" class="progress-bar-fill"></div>
+                        </div>  
+                        <div class="slider-button-prev slider-button-prev-slider-product margin-left-5-px">
+                            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.04748 1.64284L0.952244 8.50004L7.04749 15.3572" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="slider-button-next slider-button-next-slider-product margin-left-10-px"> 
+                            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.952515 1.64284L7.04776 8.50004L0.952515 15.3572" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </div>
+                    
                     </div>
                 </div>
             </section>
-            <section id="ProfessionalExperience" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile">
+            <section id="ProfessionalExperience" class="margin-bottom-40 margin-bottom-20-mobile margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile">
                 <div class="width-full display-flex align-items-center flex-direction-column">
-                    <h2 class="color-black margin-bottom-20 font-size-2-5-rem text-align-center">My Professional Experience</h2>
-                    <p class="color-black font-size-1-rem text-align-center margin-bottom-20">I have experience with languages such as JavaScript, PHP, Python, and Java, applied to full-stack development. I have worked on various projects integrating platforms like Shopify, WordPress, and PrestaShop. My experience includes creating custom solutions, automating processes, developing responsive interfaces, and optimizing workflows, as well as knowledge in software architecture and designing efficient systems.</p>
-                    <div class="width-full  display-flex flex-wrap justify-content-space-between">
-                        <a class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile" href="https://collectifpharma.fr/" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Collectif Pharma</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/collectif_pharma.png" alt="Proyecto Collectif Pharma"/>
-                            <p class="color-black">Page developed using React for the frontend and Express.js for the backend. Among the implemented features is a login system with an admin panel that allows modifying specific content on the page.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kairos.png"/><strong class="color-blue">airos 2020 - 2021</strong></div>
-                        </a>
-                        <a class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile" href="https://www.pharmaddict.fr/" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Pharmadict</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/pharmadict.png" alt="Proyecto Pharmadict"/>
-                            <p class="color-black">Page developed using the Spring Boot framework in Java, where I implemented several features, including push notification functionality with OneSignal.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kairos.png"/><strong class="color-blue">airos 2020 - 2021</strong></div>
-                        </a>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Invicta</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/invicta.png" alt="Proyecto Invicta"/>
-                            <p class="color-black">On the Invicta websites in <a class="text-decoration-underline" href="https://invicta.com.co/" target="_blank">Colombia</a>, <a class="text-decoration-underline" href="https://invicta.com.pe/" target="_blank">Peru</a>, <a class="text-decoration-underline" href="https://invictachile.com/" target="_blank">Chile</a>, and <a class="text-decoration-underline" href="https://invictamexico.com/" target="_blank">Mexico</a>, I have developed various features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                    <h2 class="color-black margin-bottom-20 font-size-title font-weight-500 text-align-center">My Professional Experience</h2>
+                    <p class="margin-bottom-40 margin-bottom-20 color-black font-size-text text-align-center margin-bottom-20 line-height-28-px">I have experience with languages such as JavaScript, PHP, Python, and Java, applied to full-stack development. I have worked on various projects integrating platforms like Shopify, WordPress, and PrestaShop. My experience includes creating custom solutions, automating processes, developing responsive interfaces, and optimizing workflows, as well as knowledge in software architecture and designing efficient systems.</p>
+                    <div class="swiper slider-swiper-experience width-full  display-flex flex-wrap justify-content-space-between">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile" href="https://collectifpharma.fr/" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Collectif Pharma</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/collectif_pharma.png" alt="Proyecto Collectif Pharma"/>-->
+                                <p class="color-black font-size-text text-align-justify">Page developed using React for the frontend and Express.js for the backend. Among the implemented features is a login system with an admin panel that allows modifying specific content on the page.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kairos.png"/><strong class="color-blue">airos 2020 - 2021</strong></div>
+                            </a>
+                            <a class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile" href="https://www.pharmaddict.fr/" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Pharmadict</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/pharmadict.png" alt="Proyecto Pharmadict"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">Page developed using the Spring Boot framework in Java, where I implemented several features, including push notification functionality with OneSignal.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kairos.png"/><strong class="color-blue">airos 2020 - 2021</strong></div>
+                            </a>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Invicta</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/invicta.png" alt="Proyecto Invicta"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Invicta websites in <a class="text-decoration-underline" href="https://invicta.com.co/" target="_blank">Colombia</a>, <a class="text-decoration-underline" href="https://invicta.com.pe/" target="_blank">Peru</a>, <a class="text-decoration-underline" href="https://invictachile.com/" target="_blank">Chile</a>, and <a class="text-decoration-underline" href="https://invictamexico.com/" target="_blank">Mexico</a>, I have developed various features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Festina</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/festina.png" alt="Proyecto Festina"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Festinas websites in <a class="text-decoration-underline" href="https://festina.com.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://festina.com.pe/" target="_blank">Peru</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Technomarine</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/technomarine.png" alt="Proyecto Technomarine"/>-->
+                                <p class="margin-bottom-40 margin-bottom-20-mobile color-black font-size-text text-align-justify line-height-28-px">On the Technomarine websites in <a class="text-decoration-underline" href="https://technomarine.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://technomarinemexico.mx/" target="_blank">México</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Crocs</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/crocs.png" alt="Proyecto Crocs"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Crocs websites in <a class="text-decoration-underline" href="https://crocs.com.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://crocs.cr/" target="_blank">Costa Rica</a>, <a class="text-decoration-underline" href="https://crocs.gt/" target="_blank">Guatemala</a>, y <a class="text-decoration-underline" href="https://crocs.com.pa/" target="_blank">Panamá</a>, I have developed various features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Onda de Mar</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/OndaDeMar.png" alt="Proyecto Onda de Mar"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Onda de Mar websites in <a class="text-decoration-underline" href="https://ondademar.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://ondademarmexico.com/" target="_blank">México</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Malva</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/malva.png" alt="Proyecto Malva"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Malva websites in <a class="text-decoration-underline" href="https://malvaonline.com/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://malva.com.pe/" target="_blank">Perú</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Scalpers</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/scalpers.png" alt="Proyecto Scalpers"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Scalpers websites in <a class="text-decoration-underline" href="https://co.scalperscompany.com/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://pe.scalperscompany.com" target="_blank">Perú</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <div class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Hoff</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/hoff.png" alt="Proyecto Hoff"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Hoff websites in <a class="text-decoration-underline" href="https://co.thehoffbrand.com/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://cl.thehoffbrand.com/" target="_blank">Chile</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </div>
+                            <a href="https://kronotime.com/" target="_blank" class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px margin-bottom-20 width-full-mobile">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page kronotime</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/kronotime_page.png" alt="Proyecto Kronotime"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">On the Kronotime website, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </a>
+                            <a class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px width-full-mobile" href="https://www.kreditime.co/" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Page Kreditime</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/kreditime.png" alt="Proyecto Kreditime"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">Page developed using the Angular framework for the frontend and Django for the backend. In this project, I implemented various functionalities on both the frontend and backend.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </a>
+                            <a class="swiper-slide margin-bottom-40 margin-bottom-20-mobile display-flex flex-direction-column justify-content-space-between width-30 height-300-px width-full-mobile" href="https://shopify.dev/docs/apps/build/checkout" target="_blank">
+                                <h4 class="color-black text-align-center margin-bottom-20 font-size-subtitle-project">Apps Shopify Checkout Extensibility</h4>
+                                <!--<img class="margin-bottom-20 height-300-px" src="./images/Apps Shopify.jpg" alt="Apps Shopify Checkout Extensibility"/>-->
+                                <p class="color-black font-size-text text-align-justify line-height-28-px">Shopify applications developed using the Remix framework. In this project, I implemented various extension functionalities, including validations, banners, custom fields, customization of payment and shipping methods, discounts and among others.</p>
+                                <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="width-full display-flex align-items-center margin-top-40"> 
+                        <div class="progress-bar">
+                            <div id="progress-bar-fill-slider-experience" class="progress-bar-fill"></div>
+                        </div>  
+                        <div class="slider-button-prev slider-button-prev-slider-experience margin-left-5-px">
+                            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.04748 1.64284L0.952244 8.50004L7.04749 15.3572" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Festina</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/festina.png" alt="Proyecto Festina"/>
-                            <p class="color-black">On the Festinas websites in <a class="text-decoration-underline" href="https://festina.com.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://festina.com.pe/" target="_blank">Peru</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
+                        <div class="slider-button-next slider-button-next-slider-experience margin-left-10-px"> 
+                            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.952515 1.64284L7.04776 8.50004L0.952515 15.3572" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
                         </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Technomarine</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/technomarine.png" alt="Proyecto Technomarine"/>
-                            <p class="color-black">On the Technomarine websites in <a class="text-decoration-underline" href="https://technomarine.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://technomarinemexico.mx/" target="_blank">México</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Crocs</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/crocs.png" alt="Proyecto Crocs"/>
-                            <p class="color-black">On the Crocs websites in <a class="text-decoration-underline" href="https://crocs.com.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://crocs.cr/" target="_blank">Costa Rica</a>, <a class="text-decoration-underline" href="https://crocs.gt/" target="_blank">Guatemala</a>, y <a class="text-decoration-underline" href="https://crocs.com.pa/" target="_blank">Panamá</a>, I have developed various features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Onda de Mar</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/OndaDeMar.png" alt="Proyecto Onda de Mar"/>
-                            <p class="color-black">On the Onda de Mar websites in <a class="text-decoration-underline" href="https://ondademar.co/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://ondademarmexico.com/" target="_blank">México</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Malva</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/malva.png" alt="Proyecto Malva"/>
-                            <p class="color-black">On the Malva websites in <a class="text-decoration-underline" href="https://malvaonline.com/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://malva.com.pe/" target="_blank">Perú</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Scalpers</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/scalpers.png" alt="Proyecto Scalpers"/>
-                            <p class="color-black">On the Scalpers websites in <a class="text-decoration-underline" href="https://co.scalperscompany.com/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://pe.scalperscompany.com" target="_blank">Perú</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </div>
-                        <div class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Hoff</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/hoff.png" alt="Proyecto Hoff"/>
-                            <p class="color-black">On the Hoff websites in <a class="text-decoration-underline" href="https://co.thehoffbrand.com/" target="_blank">Colombia</a> y <a class="text-decoration-underline" href="https://cl.thehoffbrand.com/" target="_blank">Chile</a>, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </div>
-                        <a href="https://kronotime.com/" target="_blank" class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px margin-bottom-20 width-full-mobile">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page kronotime</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/kronotime_page.png" alt="Proyecto Kronotime"/>
-                            <p class="color-black">On the Kronotime website, I have developed some features using the Shopify platform, leveraging HTML, CSS, JavaScript, and Liquid. These include API consumption, integrations, and the implementation of Shopify apps.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </a>
-                        <a class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px width-full-mobile" href="https://www.kreditime.co/" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Page Kreditime</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/kreditime.png" alt="Proyecto Kreditime"/>
-                            <p class="color-black">Page developed using the Angular framework for the frontend and Django for the backend. In this project, I implemented various functionalities on both the frontend and backend.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </a>
-                        <a class="display-flex flex-direction-column justify-content-space-between width-30 height-550-px width-full-mobile" href="https://shopify.dev/docs/apps/build/checkout" target="_blank">
-                            <h4 class="color-black text-align-center margin-bottom-20">Apps Shopify Checkout Extensibility</h4>
-                            <img class="margin-bottom-20 height-300-px" src="./images/Apps Shopify.jpg" alt="Apps Shopify Checkout Extensibility"/>
-                            <p class="color-black">Shopify applications developed using the Remix framework. In this project, I implemented various extension functionalities, including validations, banners, custom fields, customization of payment and shipping methods, discounts and among others.</p>
-                            <div class="display-flex align-items-center margin-top-20"><img class="width-20-px" src="images/kronotime.png"/><strong class="color-blue">ronotime 2021 - Currently</strong></div>
-                        </a>
+                    
                     </div>
                 </div>
             </section>
-            <section id="Contact" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile margin-bottom-20">
+            <section id="Contact" class="margin-bottom-40 margin-bottom-20-mobile margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile margin-bottom-20">
                 <div class="width-full display-flex align-items-center flex-direction-column">
-                    <h2 class="color-black margin-bottom-20 font-size-2-5-rem">Contact Me</h2>
-                    <p class="color-black font-size-1-rem text-align-center margin-bottom-20">Feel free to reach out if you have any questions, collaboration opportunities, or just want to connect! You can contact me via email or through my social media profiles. I look forward to hearing from you</p>
+                    <h2 class="color-black margin-bottom-20 font-size-title font-weight-500">Contact Me</h2>
+                    <p class="margin-bottom-40 margin-bottom-20-mobile color-black font-size-text text-align-center margin-bottom-20 line-height-28-px">Feel free to reach out if you have any questions, collaboration opportunities, or just want to connect! You can contact me via email or through my social media profiles. I look forward to hearing from you</p>
                     <div class="width-full display-flex justify-content-space-around flex-direction-column-mobile align-items-center-mobile">
                         <div class="display-flex flex-direction-column width-40 align-items-center width-full-mobile margin-bottom-20-mobile">
-                            <p class="color-black font-size-1-8-rem margin-bottom-20 text-align-center">Personal Information</p>
-                            <p class="color-black text-align-center">
+                            <p class="color-black font-size-subtitle margin-bottom-20 text-align-center">Personal Information</p>
+                            <p class="color-black text-align-center font-size-text">
                                 <strong>Celular:</strong> 3153366907 / 3044852930 <br/>
                                 <strong>Email: </strong> mariafernandamonogamejia@gmail.com / mfer.2019@hotmail.com
                             </p>
                         </div>
                         <div class="display-flex flex-direction-column width-40 align-items-center width-full-mobile">
-                            <p class="color-black font-size-1-8-rem margin-bottom-20 text-align-center">Social Media</p>
+                            <p class="color-black font-size-subtitle margin-bottom-20 text-align-center">Social Media</p>
                             <div class="display-flex">
-                                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img class="width-40-px" src="images/5279114_linkedin_network_social network_linkedin logo_icon.png" alt="Linkedin"/></a>
-                                <a href="https://x.com/mafemome" target="_blank"><img class="width-40-px" src="images/11244080_x_twitter_elon musk_twitter new logo_icon.png" alt="Twitter"/></a>
+                                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" class="font-size-text" target="_blank"><img class="width-40-px" src="images/5279114_linkedin_network_social network_linkedin logo_icon.png" alt="Linkedin"/></a>
+                                <a href="https://x.com/mafemome" target="_blank"><img class="width-40-px" class="font-size-text" src="images/11244080_x_twitter_elon musk_twitter new logo_icon.png" alt="Twitter"/></a>
                             </div>
                         </div>
                         

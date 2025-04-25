@@ -7,6 +7,65 @@ if(yearNow != null){
     yearNow.innerHTML = new Date().getFullYear();
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    var mainSwiperProject = new Swiper(".slider-swiper-product", {
+        loop: false,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+        // Navigation arrows,
+        navigation: {
+            nextEl: `.slider-button-next-slider-product`,
+            prevEl: `.slider-button-prev-slider-product`,
+        },
+        on: {
+            slideChange: function (e) {
+                let totalSlides = this.slides.length - this.params.slidesPerView + 1; 
+                let progress = ((this.activeIndex + 1) / totalSlides) * 100;
+                document.getElementById(`progress-bar-fill-slider-product`).style.width = progress + "%";
+            }
+        },
+        breakpoints: {
+            // Cuando el ancho de la ventana sea >= 989px
+            989: {
+                slidesPerView: 2.5,
+                spaceBetween: 30
+            },
+            0: {
+              slidesPerView: 1.5,
+              spaceBetween: 10
+            }
+        }
+    });
+
+    var mainSwiperExperience = new Swiper(".slider-swiper-experience", {
+        loop: false,
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+        // Navigation arrows,
+        navigation: {
+            nextEl: `.slider-button-next-slider-experience`,
+            prevEl: `.slider-button-prev-slider-experience`,
+        },
+        on: {
+            slideChange: function (e) {
+                let totalSlides = this.slides.length - this.params.slidesPerView + 1; 
+                let progress = ((this.activeIndex + 1) / totalSlides) * 100;
+                document.getElementById(`progress-bar-fill-slider-experience`).style.width = progress + "%";
+            }
+        },
+        breakpoints: {
+            // Cuando el ancho de la ventana sea >= 989px
+            989: {
+                slidesPerView: 2.5,
+                spaceBetween: 30
+            },
+            0: {
+              slidesPerView: 1.5,
+              spaceBetween: 10
+            }
+        }
+    });
+})
 
 /*const language = document.getElementById('select-language');
 

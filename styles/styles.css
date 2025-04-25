@@ -99,12 +99,16 @@ button {
     height: 550px;
 }
 
+.text-align-justify{
+    text-align: justify;
+}
+
 .list-style-none{
     list-style: none;
 }
 
 .display-flex{
-    display: flex;
+    display: flex !important;
 }
 
 .display-block{
@@ -153,6 +157,10 @@ button {
 
 .font-weight-400{
     font-weight: 400;
+}
+
+.font-weight-500{
+    font-weight: 500;
 }
 
 .font-weight-700{
@@ -211,6 +219,14 @@ button {
     margin-top: 40px;
 }
 
+.margin-left-5-px{
+    margin-left: 5px;
+}
+
+.margin-left-10-px{
+    margin-left: 10px;
+}
+
 .font-size-2-5-rem{
     font-size: 2.5rem;
 }
@@ -229,6 +245,18 @@ button {
 
 .font-size-title{
     font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.font-size-subtitle{
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
+}
+
+.font-size-subtitle-project{
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.font-size-text{
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
 .font-size-items-menu{
@@ -328,6 +356,34 @@ button {
 
 .text-decoration-underline{
     text-decoration: underline;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.progress-bar {
+    width: 98%;
+    height: 2px;
+    background: #ddd;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, 
+  #999999 0%,   /* Color sólido al inicio */
+  #999999 98%,  /* Mantiene sólido hasta el 95% */
+    transparent 98%, /* Hace el cambio */
+    transparent 100%),
+    repeating-linear-gradient(to right, 
+  #999999 0px, #999999 5px,  /* Patrón punteado */
+    transparent 5px, transparent 10px);;
+    transition: width 0.3s ease-in-out;
+    display: block !important;
 }
 
 @media (max-width: 1024px) {
