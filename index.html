@@ -9,21 +9,30 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik+Vinyl&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&family=Special+Gothic+Expanded+One&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
     <link rel="icon" href="images/2560340_m_media_network_social_icon.png" type="image/png">
 </head>
-<body class="display-flex justify-content-center align-items-start-mobile img-body" style="background-image: url(./images/background-1060405_1920.png);">
+<body class="display-flex justify-content-center align-items-start-mobile background-color-main">
+
     <!-- Header: Encabezado del sitio -->
-    <div class="width-70 background-color-white border-radius-15 padding-all shadow-content align-items-start-mobile width-full-mobile margin-bottom-40 margin-top-40">
-        <header class="width-full padding-top-20 padding-bottom-20">
-            <nav class="menu-desk width-full display-flex justify-content-space-between">
-                <ul class="width-40 display-flex justify-content-space-around">
-                    <li><a href="#About" class="text-transform-uppercase font-weight-700 color-black">About</a></li>
-                    <li><a href="#Projects" class="text-transform-uppercase font-weight-700 color-black">Projects</a></li>
-                </ul>
-                <ul class="width-40 display-flex justify-content-space-around">
-                    <li><a href="#ProfessionalExperience" class="text-transform-uppercase font-weight-700 color-black">Professional Experience</a></li>
-                    <li><a href="#Contact" class="text-transform-uppercase font-weight-700 color-black">Contact</a></li>
+    <div class="width-70 align-items-start-mobile width-full-mobile margin-bottom-40 margin-top-40 margin-top-none-mobile">
+        <!--<div class="width-full display-flex justify-content-flex-end margin-bottom-20">
+            <select id="select-language" class="background-color-transparent border-none padding-all-5 cursor-pointer font-size-select">
+                <option value="en" class="font-size-select">English</option>
+                <option value="es" class="font-size-select">Español</option>
+            </select>
+        </div>-->
+        <header class="width-full display-flex align-items-center justify-content-space-between margin-bottom-40">
+            <div >
+                <img src="./images/logo_mafe.png" alt="Logo Mafe" width="150px" />
+            </div>
+            <nav class="menu-desk width-60 display-flex justify-content-space-between">
+                <ul class="width-full display-flex justify-content-space-between">
+                    <li><a href="#About" class=" font-weight-400 color-black item-menu-about font-size-items-menu">About</a></li>
+                    <li><a href="#Projects" class=" font-weight-400 color-black item-menu-projects font-size-items-menu">Projects</a></li>
+                    <li><a href="#ProfessionalExperience" class=" font-weight-400 color-black item-menu-proffessional-experience font-size-items-menu">Professional Experience</a></li>
+                    <li><a href="#Contact" class=" font-weight-400 color-black item-menu-contact font-size-items-menu">Contact</a></li>
                 </ul>
             </nav>
             <nav class="menu-mobile">
@@ -33,26 +42,26 @@
                 <menu-hamburger-close id="menu-hamburger-close" class="menu-hamburger-close hidden-icon-menu-mobile">
                     <img src="./images/close.png" alt="Ocultar el menu en versión mobile" width="35px"/>
                 </menu-hamburger-close>
-                <menu-options-hamburger id="option-menu-hamburger" class="width-full hidden-options-menu">
-                    <li class="margin-bottom-20"><a href="#About" class="text-transform-uppercase font-weight-700 color-black">About</a></li>
-                    <li class="margin-bottom-20"><a href="#Projects" class="text-transform-uppercase font-weight-700 color-black">Projects</a></li>
-                    <li class="margin-bottom-20"><a href="#ProfessionalExperience" class="text-transform-uppercase font-weight-700 color-black">Professional Experience</a></li>
-                    <li class="margin-bottom-20"><a href="#Contact" class="text-transform-uppercase font-weight-700 color-black">Contact</a></li>
+                <menu-options-hamburger id="option-menu-hamburger" class="width-full hidden-options-menu list-style-none background-color-main">
+                    <li class="margin-bottom-20"><a href="#About" class=" font-weight-400 color-black item-menu-about font-size-items-menu">About</a></li>
+                    <li class="margin-bottom-20"><a href="#Projects" class=" font-weight-400 color-black item-menu-projects font-size-items-menu">Projects</a></li>
+                    <li class="margin-bottom-20"><a href="#ProfessionalExperience" class=" font-weight-400 color-black item-menu-proffessional-experience font-size-items-menu">Professional Experience</a></li>
+                    <li class="margin-bottom-20"><a href="#Contact" class=" font-weight-400 color-black item-menu-contact font-size-items-menu">Contact</a></li>
                 </menu-options-hamburger>
             </nav>
         </header>
 
         <!-- Sección principal del contenido -->
         <main>
-            <section id="About" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile">
-                <div class="width-30 padding-right width-full-section-mobile margin-bottom-20-mobile">
-                    <h1 class="color-black margin-bottom-20 font-size-2-5-rem">Hi, I'm Mafe <br/>Web Developer</h1>
-                    <p class="color-black font-size-1-rem">Full-stack developer with experience in system integration, process automation, and working with platforms like Shopify, WordPress, and PrestaShop. Specialized in custom checkout solutions, software architecture, and workflow optimization. Proficient in programming languages such as JavaScript, Java, PHP, and Python. Passionate about technological innovation and creating efficient solutions.</p>
+            <section id="About" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-reverse-mobile ">
+                <div class="width-60 padding-right width-full-section-mobile margin-bottom-20-mobile padding-all">
+                    <h1 class="color-black margin-bottom-20 font-size-title">> Hi, I'm Mafe </h1>
+                    <p class="color-black font-size-1-rem line-height-28-px">Full-stack developer with experience in system integration, process automation, and working with platforms like Shopify, WordPress, and PrestaShop. Specialized in custom checkout solutions, software architecture, and workflow optimization. Proficient in programming languages such as JavaScript, Java, PHP, and Python. Passionate about technological innovation and creating efficient solutions.</p>
                 </div>
                 <div class="width-40 width-full-section-mobile margin-bottom-20-mobile display-flex justify-content-center align-items-center-mobile">
-                    <div class="img-me-portfolio" style="background-image: url('./images/IMG_20241114_154617.jpg');"></div>
+                    <div class="img-me-portfolio" style="background-image: url('./images/portafolio.jpg');"></div>
                 </div>
-                <div class="width-30 width-full-section-mobile">
+                <!--<div class="width-30 width-full-section-mobile">
                     <p class="color-black font-size-2-5-rem padding-left"><strong class="font-size-2-5-rem">Hi</strong>, <span class="strong-600 font-size-2-rem">I'm</span> <br/> <span class="font-size-1-8-rem">I'm</span> <br/> <span class="font-size-1-8-rem"> Web Developer</span> </p>
                     <p class="color-blue font-size-2-5-rem padding-left margin-top-20  "><strong class="width-full border-bottom-1 display-block">Hire Me</strong></p>
                     <div class="width-full padding-left margin-bottom-20 margin-top-20">
@@ -77,7 +86,7 @@
                         <img class="width-40-px" src="./images/1298762_shopify_icon.png" alt="Shopify" title="Shopify"/>
                         <img class="width-40-px" src="./images/1298776_wordpress_icon.png" alt="WordPress" title="WordPress"/>
                     </div>
-                </div>
+                </div>-->
             </section>
 
             <section id="Projects" class="margin-top-20 width-full display-flex justify-content-space-around flex-direction-column-mobile">

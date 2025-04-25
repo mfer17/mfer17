@@ -1,0 +1,27 @@
+{
+    "languages": [
+        {
+            "type": "en",
+            "translation": {
+                "menu": {
+                    "about": "About",
+                    "project": "Project",
+                    "professional_experience": "Professional Experience",
+                    "contact": "Contact"
+                }
+            }
+        },    
+        {
+            "type": "es",
+            "translation": {
+                "menu": {
+                    "about": "Acerca de mi",
+                    "project": "Proyectos",
+                    "professional_experience": "Experiencia Profesional",
+                    "contact": "Contacto"
+                }
+            }
+        }
+        
+    ]
+}
