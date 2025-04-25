@@ -1,6 +1,12 @@
 const menu = document.getElementById('option-menu-hamburger');
 const iconShow = document.getElementById("menu-hamburger-open");
 const iconClose = document.getElementById("menu-hamburger-close");
+const yearNow = document.getElementById('year-now');
+
+if(yearNow != null){
+    yearNow.innerHTML = new Date().getFullYear();
+}
+
 
 /*const language = document.getElementById('select-language');
 
