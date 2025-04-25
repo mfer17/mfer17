@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 spaceBetween: 30
             },
             0: {
-              slidesPerView: 1.5,
-              spaceBetween: 10
+              slidesPerView: 1,
+              spaceBetween: 0
             }
         }
     });
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 spaceBetween: 30
             },
             0: {
-              slidesPerView: 1.5,
-              spaceBetween: 10
+              slidesPerView: 1,
+              spaceBetween: 0
             }
         }
     });
