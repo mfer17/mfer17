@@ -443,6 +443,14 @@ button {
     .flex-direction-column-reverse-mobile{
         flex-direction: column-reverse;
     }
+
+    .display-none-mobile{
+        display: none !important;
+    }
+
+    .padding-all-none-mobile{
+        padding: 0 !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -458,6 +466,8 @@ button {
     .margin-top-20-mobile{
         margin-top: 20px !important;
     }
+
+    
 }
 
 
