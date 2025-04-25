@@ -2,7 +2,7 @@ const menu = document.getElementById('option-menu-hamburger');
 const iconShow = document.getElementById("menu-hamburger-open");
 const iconClose = document.getElementById("menu-hamburger-close");
 
-const language = document.getElementById('select-language');
+/*const language = document.getElementById('select-language');
 
 
 
@@ -33,7 +33,7 @@ language.addEventListener('change', async (event) => {
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
     });
-})
+})*/
 
 const itemChange = (elementChange, value) => {
     elementChange.forEach(element => {
